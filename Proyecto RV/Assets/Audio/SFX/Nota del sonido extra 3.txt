@@ -1,0 +1,1 @@
+El sonido "extra 3" es un sonido de interruptor de la luz. Esto podría ser útil como mecánica, en escenario donde el jugador debe buscar un interruptor en la oscuridad.

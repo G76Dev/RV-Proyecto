@@ -1,0 +1,38 @@
+TAREAS:
+
+->Víctor
+
+*Buscar los sonidos y temas restantes
+*Grabar y procesar todos los diálogos del juego
+*Modelar escenarios
+
+->Fer
+
+*Assets especiales (documentos, carné de identidad, cartera, foto, etc)
+*Decorar niveles (baja prioridad)
+*Programar gameplay
+*Asistir en programación de mecánicas y sonido
+
+->Thund3r:
+
+*Programar mecánicas
+*Programar sonido
+*Programar gameplay
+
+-------------------------------------------------------------------------
+
+DEADLINES:
+
+->Introducción (hasta el momento en que el jugador despierta en la cama): Día 14 por la noche.
+*Con toma de decisión incluida
+*Con prologo narrativo incluido
+
+->Escena 1 (Casa + Jardín): Día 15 por la noche
+
+->Escena 2 (Exterior laboratorio): Día 16 por la noche
+*Sin la consola PIN por el momento
+
+->Escena 3 (Interior laboratorio): Día 18 por la noche
+*Los documentos extra son opcionales pero preferibles
+
+->Escena 4 (Cámara de Espécime Alfa y Ending): Depende del progreso de las etapas anteriores.
