@@ -86,7 +86,7 @@
 
 				//Código Dan
 				float theta = (float)(Math.Sqrt(rvec[0] * rvec[0] + rvec[1] * rvec[1] + rvec[2] * rvec[2]) * 180 / Math.PI);
-				Vector3 axis = new Vector3((float)rvec[0], -(float)rvec[1], (float)rvec[2]);            //multiply m.y by -1 since in Unity y-axis points upward
+				Vector3 axis = new Vector3((float)rvec[0], (float)-rvec[1], (float)rvec[2]);            //multiply m.y by -1 since in Unity y-axis points upward
 				Quaternion rot = Quaternion.AngleAxis(theta, axis);
 
 				Vector3 tvecV = new Vector3((float)tvec[0], (float)tvec[1], (float)tvec[2]);
