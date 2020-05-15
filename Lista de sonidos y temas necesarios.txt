@@ -1,9 +1,9 @@
 Piezas musicales:
 - Tema introductorio: -House of the Rising Sun-
-- Tema ambiental para tutorial:
-- Tema de noticia dramática: 
-- Tema intrigante de introducción al laboratorio:
-- Tema breve "esperanzador":
+- Tema ambiental para tutorial: -OMITIDO- -Se utilizará sonido ambiente exclusivamente-
+- Tema de noticia dramática: "Lyric Mood"
+- Tema intrigante de introducción al laboratorio: "Story at Night" -SUJETO A CAMBIOS-
+- Tema breve "esperanzador": "Warm Romantic Mood"
 - Tema del ending: -The End of The World- (temporal)
 
 
@@ -12,7 +12,7 @@ Piezas musicales:
 
 SFX:
 - 1.Sonido de apagado de radio -ENCONTRADO-
-- 2.Sonido de levantarse de la cama
+- 2.Sonido de levantarse de la cama -ENCONTRADO-
 - 3.Sonido de inspección de objeto (varios) -ENCONTRADO-
 - 4.Sonido de hallazgo -ENCONTRADO-
 - 5.Sonido de pasos por suelo de madera -ENCONTRADO-
@@ -25,10 +25,10 @@ SFX:
 - 12.Sonido de puerta exterior -ENCONTRADO-
 - 13.Sonido de viento leve (jardín) -ENCONTRADO-
 - 14.Sonido de pasos por el jardín -ENCONTRADO-
-- 16.Sonido de puerta de coche
-- 17.Sonido de coche arrancando
+- 16.Sonido de puerta de coche -OMITIDO POR AHORA-
+- 17.Sonido de coche arrancando -ENCONTRADO-
 - 18.Sonido de motor -ENCONTRADO-
-- 19.Sonido de apagado de motor
+- 19.Sonido de apagado de motor -ENCONTRADO-
 - 20.Sonido de viento intimidante (cima) -ENCONTRADO-
 - 21.Sonido de pisadas sobre tierra -ENCONTRADO-
 - 22.Sonido de papeles -ENCONTRADO-
@@ -36,6 +36,6 @@ SFX:
 - 24.Sonido de error -ENCONTRADO-
 - 25.Sonido de desbloqueo de puerta -ENCONTRADO- -SUJETO A CAMBIOS- -QUIZA NECESITE ALGO MAS-
 - 26.Sonido de pasos en el laboratorio -ENCONTRADO-
-- 27.Sonido de lector de huella dactilar
-- 28.Sonido de cerradura rompiéndose por disparo
+- 27.Sonido de lector de huella dactilar -ENCONTRADO-
+- 28.Sonido de cerradura rompiéndose por disparo -ENCONTRADO-
 - 29.Sonido de ascensor -ENCONTRADO-
