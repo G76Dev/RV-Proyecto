@@ -17,7 +17,16 @@ public class LevelChanger : MonoBehaviour
         instance = this;
     }
 
-    public void WhiteFadeOut()
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+    }
+    
+
+public void WhiteFadeOut()
     {
         fadeImage.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
         fadeAnimator.SetTrigger("FadeOut");
@@ -41,7 +50,7 @@ public class LevelChanger : MonoBehaviour
 
     public void OnFadeComplete()
     {
-        //SceneManager.LoadSceneAsync(levelToLoad);
-        Debug.Log("debería cambiar");
+        SceneManager.LoadSceneAsync(levelToLoad);
+        //Debug.Log("debería cambiar");
     }
 }
