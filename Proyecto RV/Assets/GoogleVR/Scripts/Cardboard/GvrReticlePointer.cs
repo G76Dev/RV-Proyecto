@@ -24,6 +24,10 @@ using UnityEngine.EventSystems;
 [HelpURL("https://developers.google.com/vr/unity/reference/class/GvrReticlePointer")]
 public class GvrReticlePointer : GvrBasePointer
 {
+
+    // Referencia a la pistola.
+    private PistolBehaviour pistol;
+
     /// <summary>
     /// The constants below are expsed for testing. Minimum inner angle of the reticle (in degrees).
     /// </summary>
@@ -119,6 +123,7 @@ public class GvrReticlePointer : GvrBasePointer
     /// <inheritdoc/>
     public override void OnPointerClickDown()
     {
+        pistol.Shoot();
     }
 
     /// <inheritdoc/>
@@ -175,6 +180,9 @@ public class GvrReticlePointer : GvrBasePointer
     protected override void Start()
     {
         base.Start();
+
+        // Se busca el arma del jugador.
+        pistol = GameObject.FindWithTag("pistol").GetComponent<PistolBehaviour>();
 
         Renderer rendererComponent = GetComponent<Renderer>();
         rendererComponent.sortingOrder = reticleSortingOrder;
