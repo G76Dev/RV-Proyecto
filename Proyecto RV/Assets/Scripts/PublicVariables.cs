@@ -6,6 +6,8 @@ public class PublicVariables : MonoBehaviour
 {
     public static PublicVariables instance;
 
+    public int level;
+
     public GameObject carnet;
     public GameObject periodico;
     public GameObject llaves;
@@ -20,6 +22,7 @@ public class PublicVariables : MonoBehaviour
     private void Awake()
     {
         instance = this;
+        //level = 0;
     }
 
     public void UpdateCarnet()
@@ -62,7 +65,8 @@ public class PublicVariables : MonoBehaviour
 
     public void EndLevel()
     {
-        LevelChanger.instance.FadeToLevel(1, 0);
+        level++;
+        LevelChanger.instance.FadeToLevel(level, 0);
     }
 
 }

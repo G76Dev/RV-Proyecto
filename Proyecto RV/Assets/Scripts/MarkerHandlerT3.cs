@@ -14,7 +14,7 @@ public class MarkerHandlerT3 : MonoBehaviour
         {
             looking = false;
             ZoomIn.instance.zooming = true;
-            LevelChanger.instance.FadeToLevel(1, 0);
+            PublicVariables.instance.EndLevel();
             gameObject.SetActive(false);
         }
     }

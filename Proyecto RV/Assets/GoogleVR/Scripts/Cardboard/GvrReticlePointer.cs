@@ -123,7 +123,8 @@ public class GvrReticlePointer : GvrBasePointer
     /// <inheritdoc/>
     public override void OnPointerClickDown()
     {
-        pistol.Shoot();
+        if (pistol != null)
+            pistol.Shoot();
     }
 
     /// <inheritdoc/>
@@ -182,7 +183,8 @@ public class GvrReticlePointer : GvrBasePointer
         base.Start();
 
         // Se busca el arma del jugador.
-        pistol = GameObject.FindWithTag("pistol").GetComponent<PistolBehaviour>();
+        if (PublicVariables.instance.level == 2)
+            pistol = GameObject.FindWithTag("pistol").GetComponent<PistolBehaviour>();
 
         Renderer rendererComponent = GetComponent<Renderer>();
         rendererComponent.sortingOrder = reticleSortingOrder;
