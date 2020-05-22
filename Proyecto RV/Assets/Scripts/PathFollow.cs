@@ -110,6 +110,8 @@ public class PathFollow : MonoBehaviour
                         {
                             if (interactableObjects[4] != null)
                                 interactableObjects[4].collider.enabled = true;
+                            else
+                                interactableObjects[5].collider.enabled = true;
                         }
                     }
                     else if (PublicVariables.instance.level == 2)
@@ -335,6 +337,8 @@ public class PathFollow : MonoBehaviour
                         FollowPath(25);
                         if (interactableObjects[4] != null)
                             interactableObjects[4].collider.enabled = true;
+                        else
+                            interactableObjects[5].collider.enabled = true;
                     }
                     else
                     {
