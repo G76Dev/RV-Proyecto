@@ -140,6 +140,7 @@ public class ResonanceAudioSource : MonoBehaviour {
         audioSource.outputAudioMixerGroup != ResonanceAudio.MixerGroup) {
       Debug.LogWarning("Make sure AudioSource is routed to a mixer that ResonanceAudioRenderer " +
                        "is attached to.");
+            Debug.LogWarning(audioSource.name);
     }
   }
 #endif  // UNITY_EDITOR

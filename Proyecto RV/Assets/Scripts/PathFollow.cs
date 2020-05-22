@@ -14,6 +14,8 @@ public class PathFollow : MonoBehaviour
     public List<PathPropio> paths = new List<PathPropio>();
     public List<VirtualMarker> virtualMarkers = new List<VirtualMarker>();
     public List<InteractableObject> interactableObjects = new List<InteractableObject>();
+    public List<AudioClip> sonidosAux = new List<AudioClip>();
+    public List<AudioClip> sonidosCaminos = new List<AudioClip>();
 
     private void Awake()
     {
@@ -44,6 +46,8 @@ public class PathFollow : MonoBehaviour
                 if (currentCheckpoint >= paths[pathFollowing].checkpoints.Count)
                 {
                     isMoving = false;
+                    AudioManager.instance.stopSound(AudioManager.instance.player);
+                    AudioManager.instance.player.loop = false;
 
                     foreach (VirtualMarker vm in virtualMarkers)
                     {
@@ -119,6 +123,7 @@ public class PathFollow : MonoBehaviour
                     if (actualMarker == -1)
                     {
                         FollowPath(0);
+                        AudioManager.instance.playSoundOnPlayer(sonidosAux[0]);
                     }
                     else if (actualMarker == 1)
                     {
@@ -307,6 +312,78 @@ public class PathFollow : MonoBehaviour
                     break;
             }
         }
+        else if (PublicVariables.instance.level == 2)
+        {
+            switch (id)
+            {
+                case 0:
+                    if (actualMarker == -1)
+                    {
+                        FollowPath(0);
+                    }
+                    else if (actualMarker == 1)
+                    {
+                        FollowPath(3);
+                    }
+                    else if (actualMarker == 2)
+                    {
+                        FollowPath(4);
+                    }
+                    else
+                    {
+                        Debug.LogWarning("Esto no debería pasar, AM: " + actualMarker + ", id: " + id);
+                    }
+                    break;
+                case 1:
+                    if (actualMarker == 0)
+                    {
+                        FollowPath(1);
+                    }
+                    else
+                    {
+                        Debug.LogWarning("Esto no debería pasar, AM: " + actualMarker + ", id: " + id);
+                    }
+                    break;
+                case 2:
+                    if (actualMarker == 0)
+                    {
+                        FollowPath(2);
+                    }
+                    else if (actualMarker == 3)
+                    {
+                        FollowPath(6);
+                    }
+                    else
+                    {
+                        Debug.LogWarning("Esto no debería pasar, AM: " + actualMarker + ", id: " + id);
+                    }
+                    break;
+                case 3:
+                    if (actualMarker == 2)
+                    {
+                        FollowPath(5);
+                    }
+                    else if (actualMarker == 4)
+                    {
+                        FollowPath(8);
+                    }
+                    else
+                    {
+                        Debug.LogWarning("Esto no debería pasar, AM: " + actualMarker + ", id: " + id);
+                    }
+                    break;
+                case 4:
+                    if (actualMarker == 3)
+                    {
+                        FollowPath(7);
+                    }
+                    else
+                    {
+                        Debug.LogWarning("Esto no debería pasar, AM: " + actualMarker + ", id: " + id);
+                    }
+                    break;
+            }
+        }
 
         actualMarker = id;
 
@@ -321,6 +398,30 @@ public class PathFollow : MonoBehaviour
         pathFollowing = id;
         currentCheckpoint = 0;
         isMoving = true;
+
+        //Audio
+        AudioManager.instance.player.loop = true;
+        int index = 0;
+
+        if (PublicVariables.instance.level == 1)
+        {
+            if (id < 22)
+            {
+                index = Random.Range(0, 10);
+
+            }
+            else
+            {
+                index = Random.Range(10, 20);
+            }
+        }
+        else if (PublicVariables.instance.level == 2)
+        {
+            index = Random.Range(0, 5);
+        }
+
+            AudioManager.instance.playSoundOnPlayer(sonidosCaminos[index]);
+
         Debug.Log("Path [" + id + "]");
     }
 }
