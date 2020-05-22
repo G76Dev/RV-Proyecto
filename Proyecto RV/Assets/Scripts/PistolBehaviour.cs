@@ -53,7 +53,7 @@ public class PistolBehaviour : MonoBehaviour
         }
         else
         {
-            PathFollow.instance.virtualMarkers[0].gameObject.SetActive(true);
+            PathFollow.instance.virtualMarkers[0].collider.enabled = true;
         }
     }
 

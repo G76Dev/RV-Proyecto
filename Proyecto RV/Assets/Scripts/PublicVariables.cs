@@ -94,7 +94,6 @@ public class PublicVariables : MonoBehaviour
         if (tarjetaTaken)
         {
             Destroy(documento);
-            PathFollow.instance.virtualMarkers[0].marcadoresAlrededor.Add(2);
             AudioManager.instance.playSoundOnJugador(PathFollow.instance.sonidosDialogos[4]);
             AudioManager.instance.playAfter(PathFollow.instance.sonidosDialogos[4], PathFollow.instance.sonidosDialogos[1]);
             AudioManager.instance.playAfter(PathFollow.instance.sonidosDialogos[4], PathFollow.instance.sonidosDialogos[1], PathFollow.instance.sonidosDialogos[2]);

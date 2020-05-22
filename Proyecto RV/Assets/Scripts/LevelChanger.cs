@@ -50,7 +50,7 @@ public void WhiteFadeOut()
 
     public void OnFadeComplete()
     {
-        if (PublicVariables.instance.level == 2)
+        if (PublicVariables.instance.level == 3)
         {
             Application.Quit();
         }

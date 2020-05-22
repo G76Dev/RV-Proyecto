@@ -4438,7 +4438,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 65205302}
-  m_Mesh: {fileID: 31669776}
+  m_Mesh: {fileID: 203330467}
 --- !u!23 &65205306
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12924,7 +12924,7 @@ MonoBehaviour:
   OutlineColor: {r: 0, g: 0, b: 0, a: 0}
   isSphere: 0
   collider: {fileID: 86686391}
-  marcadoresAlrededor: 
+  marcadoresAlrededor: 02000000
 --- !u!114 &86686394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15278,8 +15278,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 536009461}
-          m_MethodName: BlackFadeOut
+        - m_Target: {fileID: 195708696}
+          m_MethodName: EndLevel
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -24864,18 +24864,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 530993091}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &536009461 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2251491298407852131, guid: 096998d2100923a4d8e3dd83a66d0e6e,
-    type: 3}
-  m_PrefabInstance: {fileID: 188510779}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b2c0965e9f8afb46b9758c959eabb8f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &548042728
 PrefabInstance:
   m_ObjectHideFlags: 0
