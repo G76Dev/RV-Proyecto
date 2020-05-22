@@ -58,8 +58,8 @@ public class PublicVariables : MonoBehaviour
         puerta2.transform.RotateAround(new Vector3(-56.463f, 1.325f, 30.488f), Vector3.up, 90);
 
         AudioManager.instance.playSoundOnJugador(PathFollow.instance.sonidosDialogos[4]);
-        AudioManager.instance.playAfter(PathFollow.instance.sonidosDialogos[4], PathFollow.instance.sonidosDialogos[13]);
-        AudioManager.instance.playAfter(PathFollow.instance.sonidosDialogos[4], PathFollow.instance.sonidosDialogos[13], PathFollow.instance.sonidosDialogos[14]);
+       // AudioManager.instance.playAfter(PathFollow.instance.sonidosDialogos[4], PathFollow.instance.sonidosDialogos[13]);
+        //AudioManager.instance.playAfter(PathFollow.instance.sonidosDialogos[4], PathFollow.instance.sonidosDialogos[13], PathFollow.instance.sonidosDialogos[14]);
         Invoke("noEncuentraLlaves1", 60f);
     }
 
