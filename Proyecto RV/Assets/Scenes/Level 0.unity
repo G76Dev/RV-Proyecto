@@ -10101,10 +10101,12 @@ MonoBehaviour:
   periodico: {fileID: 0}
   llaves: {fileID: 0}
   pistola: {fileID: 0}
+  nota: {fileID: 0}
   pistolaTaken: 0
   puerta1: {fileID: 0}
   puerta2: {fileID: 0}
   puerta3: {fileID: 0}
+  puerta4: {fileID: 0}
 --- !u!4 &808925636
 Transform:
   m_ObjectHideFlags: 0
