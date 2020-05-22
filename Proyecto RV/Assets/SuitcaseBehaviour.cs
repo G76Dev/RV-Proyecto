@@ -16,7 +16,9 @@ public class SuitcaseBehaviour : MonoBehaviour
     {
         if (sr.IsShot())
         {
-            // ...
+            PathFollow.instance.virtualMarkers[0].marcadoresAlrededor.Add(1);
+            AudioManager.instance.playSoundOnJugador(PathFollow.instance.sonidosDialogos[6]);
+            AudioManager.instance.playAfter(PathFollow.instance.sonidosDialogos[6], PathFollow.instance.sonidosDialogos[3]);
             pd.Play();
             sr.AlreadyShot();
             gameObject.SetActive(false);

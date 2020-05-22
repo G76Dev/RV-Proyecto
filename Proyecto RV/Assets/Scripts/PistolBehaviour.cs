@@ -23,13 +23,6 @@ public class PistolBehaviour : MonoBehaviour
     private bool canShoot = false;
     private bool alreadyChanged = false;
 
-    private List<VirtualMarker> marcadoresActivos;
-
-    private void Awake()
-    {
-        marcadoresActivos = new List<VirtualMarker>();
-    }
-
     public void PlayParticlesAndSound()
     {
         particles.Play();
@@ -48,16 +41,20 @@ public class PistolBehaviour : MonoBehaviour
 
     public void ActivateMarkers()
     {
-        foreach (VirtualMarker vm in marcadoresActivos)
+        if (PathFollow.instance.actualMarker != -1)
         {
-            if (vm.isSphere)
-                vm.gameObject.SetActive(true);
-            else
-                vm.collider.enabled = true;
+            foreach (int num in PathFollow.instance.virtualMarkers[PathFollow.instance.actualMarker].marcadoresAlrededor)
+            {
+                if (PathFollow.instance.virtualMarkers[num].isSphere)
+                    PathFollow.instance.virtualMarkers[num].gameObject.SetActive(true);
+                else
+                    PathFollow.instance.virtualMarkers[num].collider.enabled = true;
+            }
         }
-
-        marcadoresActivos.Clear();
-        
+        else
+        {
+            PathFollow.instance.virtualMarkers[0].gameObject.SetActive(true);
+        }
     }
 
     public void DeactivateMarkers()
@@ -66,12 +63,10 @@ public class PistolBehaviour : MonoBehaviour
         {
             if (vm.isSphere && vm.gameObject.activeSelf)
             {
-                marcadoresActivos.Add(vm);
                 vm.gameObject.SetActive(false);
             }
-            else if (vm.collider.enabled)
+            else if (vm.collider.enabled && !vm.isSphere)
             {
-                marcadoresActivos.Add(vm);
                 vm.collider.enabled = false;
             }
         }

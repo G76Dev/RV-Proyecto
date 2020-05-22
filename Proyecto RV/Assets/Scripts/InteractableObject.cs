@@ -26,6 +26,9 @@ public class InteractableObject : MonoBehaviour
 
     public void HideOutline()
     {
-        renderer.material.SetFloat("_Outline", 0f);
+        foreach (Material m in renderer.materials)
+        {
+            m.SetFloat("_Outline", 0f);
+        }
     }
 }

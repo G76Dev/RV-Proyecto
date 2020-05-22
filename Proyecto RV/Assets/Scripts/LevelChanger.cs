@@ -50,7 +50,13 @@ public void WhiteFadeOut()
 
     public void OnFadeComplete()
     {
-        SceneManager.LoadSceneAsync(levelToLoad);
-        //Debug.Log("debería cambiar");
+        if (PublicVariables.instance.level == 2)
+        {
+            Application.Quit();
+        }
+        else
+        {
+            SceneManager.LoadSceneAsync(levelToLoad);
+        }
     }
 }

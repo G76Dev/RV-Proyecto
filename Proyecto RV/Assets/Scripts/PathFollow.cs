@@ -77,6 +77,9 @@ public class PathFollow : MonoBehaviour
                         virtualMarkers[actualMarker].collider.enabled = false;
                     }
 
+                    if (PublicVariables.instance.level == 2)
+                        PublicVariables.instance.ciudad.GetComponent<Collider>().enabled = false;
+
                     //Interactable Objects
                     foreach (InteractableObject io in interactableObjects)
                     {
@@ -107,6 +110,25 @@ public class PathFollow : MonoBehaviour
                         {
                             if (interactableObjects[4] != null)
                                 interactableObjects[4].collider.enabled = true;
+                        }
+                    }
+                    else if (PublicVariables.instance.level == 2)
+                    {
+                        if (actualMarker == 1)
+                        {
+                            if (interactableObjects[0] != null)
+                                interactableObjects[0].collider.enabled = true;
+                            if (interactableObjects[1] != null)
+                                interactableObjects[1].collider.enabled = true;
+                        }
+                        else if (actualMarker == 2)
+                        {
+                            PublicVariables.instance.ciudad.GetComponent<Collider>().enabled = true;
+                        }
+                        else if (actualMarker == 4)
+                        {
+                            if (interactableObjects[2] != null)
+                                interactableObjects[2].collider.enabled = true;
                         }
                     }
                     
@@ -329,6 +351,7 @@ public class PathFollow : MonoBehaviour
                     if (actualMarker == -1)
                     {
                         FollowPath(0);
+                        AudioManager.instance.playSoundOnJugador(PathFollow.instance.sonidosDialogos[0]);
                     }
                     else if (actualMarker == 1)
                     {
@@ -430,7 +453,5 @@ public class PathFollow : MonoBehaviour
         }
 
             AudioManager.instance.playSoundOnPlayer(sonidosCaminos[index]);
-
-        //Debug.Log("Path [" + id + "]");
     }
 }

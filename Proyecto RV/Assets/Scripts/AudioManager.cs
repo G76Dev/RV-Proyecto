@@ -7,10 +7,12 @@ public class AudioManager : MonoBehaviour
     public static AudioManager instance;
     public AudioSource player;
     public AudioSource jugador;
-    public AudioSource narrador;
+
     public bool radioDialogo;
     public bool llavesDialogo;
     public bool periodicoDialogo;
+    public bool documentoDialogo;
+    public bool ciudadDialogo;
 
     private AudioClip secondClipJugador;
     private AudioClip thirdClipJugador;
@@ -42,14 +44,12 @@ public class AudioManager : MonoBehaviour
 
     public void playSoundOnPlayer(AudioClip ac)
     {
-        //Debug.Log("sonido player: " + ac.name);
         player.clip = ac;
         player.Play();
     }
 
     public void playSoundOnJugador(AudioClip ac)
     {
-        Debug.Log("sonido: " + ac.name);
         jugador.clip = ac;
         jugador.Play();
     }
@@ -89,11 +89,6 @@ public class AudioManager : MonoBehaviour
         {
             jugador.clip = secondClipJugador;
             jugador.Play();
-            Debug.Log("sonido: " + secondClipJugador.name);
-        }
-        else
-        {
-            Debug.LogWarning("Can't play " + secondClipJugador.name +  ". This song is already playing: " + jugador.clip.name);
         }
     }
 
@@ -103,11 +98,6 @@ public class AudioManager : MonoBehaviour
         {
             jugador.clip = thirdClipJugador;
             jugador.Play();
-            Debug.Log("sonido: " + thirdClipJugador.name);
-        }
-        else
-        {
-            Debug.LogWarning("Can't play " + thirdClipJugador.name + ". This song is already playing: " + jugador.clip.name);
         }
     }
 
@@ -117,11 +107,6 @@ public class AudioManager : MonoBehaviour
         {
             jugador.clip = fourthClipJugador;
             jugador.Play();
-            Debug.Log("sonido: " + fourthClipJugador.name);
-        }
-        else
-        {
-            Debug.LogWarning("Can't play " + fourthClipJugador.name + ". This song is already playing: " + jugador.clip.name);
         }
     }
 
@@ -131,11 +116,6 @@ public class AudioManager : MonoBehaviour
         {
             jugador.clip = fifthClipJugador;
             jugador.Play();
-            Debug.Log("sonido: " + fifthClipJugador.name);
-        }
-        else
-        {
-            Debug.LogWarning("Can't play " + fifthClipJugador.name + ". This song is already playing: " + jugador.clip.name);
         }
     }
 
@@ -163,6 +143,26 @@ public class AudioManager : MonoBehaviour
         {
             periodicoDialogo = true;
             AudioManager.instance.playSoundOnJugador(ac);
+        }
+    }
+
+    public void tieneQueCogerDocumento(AudioClip ac)
+    {
+        if (!documentoDialogo)
+        {
+            documentoDialogo = true;
+            AudioManager.instance.playSoundOnJugador(ac);
+        }
+    }
+
+    public void ciudadVacia(AudioClip ac)
+    {
+        if (!ciudadDialogo)
+        {
+            ciudadDialogo = true;
+            AudioManager.instance.playSoundOnJugador(ac);
+            AudioManager.instance.playAfter(ac, PathFollow.instance.sonidosDialogos[5]);
+            PublicVariables.instance.ciudad.SetActive(false);
         }
     }
 }

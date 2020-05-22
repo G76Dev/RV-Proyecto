@@ -14,12 +14,18 @@ public class PublicVariables : MonoBehaviour
     public GameObject pistola;
     public GameObject nota;
 
+    public GameObject documento;
+    public GameObject tarjeta;
+
     public bool pistolaTaken;
+    public bool tarjetaTaken;
 
     public GameObject puerta1;
     public GameObject puerta2;
     public GameObject puerta3;
     public GameObject puerta4;
+
+    public GameObject ciudad;
 
     private void Awake()
     {
@@ -74,6 +80,24 @@ public class PublicVariables : MonoBehaviour
             AudioManager.instance.playSoundOnPlayer(PathFollow.instance.sonidosAux[1]);
             puerta3.GetComponent<AudioSource>().Play();
             puerta3.transform.RotateAround(new Vector3(-71.36f, 1.325f, 29.19f), Vector3.up, -80);
+        }
+    }
+
+    public void UpdateTarjeta()
+    {
+        Destroy(tarjeta);
+        tarjetaTaken = true;
+    }
+
+    public void UpdateDocumento()
+    {
+        if (tarjetaTaken)
+        {
+            Destroy(documento);
+            PathFollow.instance.virtualMarkers[0].marcadoresAlrededor.Add(2);
+            AudioManager.instance.playSoundOnJugador(PathFollow.instance.sonidosDialogos[4]);
+            AudioManager.instance.playAfter(PathFollow.instance.sonidosDialogos[4], PathFollow.instance.sonidosDialogos[1]);
+            AudioManager.instance.playAfter(PathFollow.instance.sonidosDialogos[4], PathFollow.instance.sonidosDialogos[1], PathFollow.instance.sonidosDialogos[2]);
         }
     }
 
