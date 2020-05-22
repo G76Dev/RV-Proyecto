@@ -16,6 +16,9 @@ public class PathFollow : MonoBehaviour
     public List<InteractableObject> interactableObjects = new List<InteractableObject>();
     public List<AudioClip> sonidosAux = new List<AudioClip>();
     public List<AudioClip> sonidosCaminos = new List<AudioClip>();
+    public List<AudioClip> sonidosDialogos = new List<AudioClip>();
+
+    private bool hasGoSalon = false;
 
     private void Awake()
     {
@@ -123,7 +126,8 @@ public class PathFollow : MonoBehaviour
                     if (actualMarker == -1)
                     {
                         FollowPath(0);
-                        AudioManager.instance.playSoundOnPlayer(sonidosAux[0]);
+                        AudioManager.instance.playSoundOnJugador(sonidosAux[0]);
+                        AudioManager.instance.playAfter(sonidosAux[0], sonidosDialogos[12]);
                     }
                     else if (actualMarker == 1)
                     {
@@ -190,6 +194,11 @@ public class PathFollow : MonoBehaviour
                     if (actualMarker == 3)
                     {
                         FollowPath(9);
+                        if (!hasGoSalon)
+                        {
+                            hasGoSalon = true;
+                            AudioManager.instance.playSoundOnJugador(sonidosDialogos[3]);
+                        }
                     }
                     else if (actualMarker == 5)
                     {
@@ -422,6 +431,6 @@ public class PathFollow : MonoBehaviour
 
             AudioManager.instance.playSoundOnPlayer(sonidosCaminos[index]);
 
-        Debug.Log("Path [" + id + "]");
+        //Debug.Log("Path [" + id + "]");
     }
 }

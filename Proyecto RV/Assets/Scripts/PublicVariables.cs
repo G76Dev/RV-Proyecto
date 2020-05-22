@@ -35,6 +35,10 @@ public class PublicVariables : MonoBehaviour
 
         puerta1.GetComponent<AudioSource>().Play();
         puerta1.transform.RotateAround(new Vector3(-35.36132f, 1.325f, 27.038f), Vector3.up, 90);
+
+        AudioManager.instance.playSoundOnJugador(PathFollow.instance.sonidosDialogos[10]);
+        AudioManager.instance.playAfter(PathFollow.instance.sonidosDialogos[10], PathFollow.instance.sonidosDialogos[1]);
+        AudioManager.instance.playAfter(PathFollow.instance.sonidosDialogos[10], PathFollow.instance.sonidosDialogos[1], PathFollow.instance.sonidosDialogos[2]);
     }
 
     public void UpdatePeriodico()
@@ -46,6 +50,11 @@ public class PublicVariables : MonoBehaviour
 
         puerta2.GetComponent<AudioSource>().Play();
         puerta2.transform.RotateAround(new Vector3(-56.463f, 1.325f, 30.488f), Vector3.up, 90);
+
+        AudioManager.instance.playSoundOnJugador(PathFollow.instance.sonidosDialogos[4]);
+        AudioManager.instance.playAfter(PathFollow.instance.sonidosDialogos[4], PathFollow.instance.sonidosDialogos[13]);
+        AudioManager.instance.playAfter(PathFollow.instance.sonidosDialogos[4], PathFollow.instance.sonidosDialogos[13], PathFollow.instance.sonidosDialogos[14]);
+        Invoke("noEncuentraLlaves1", 60f);
     }
 
     public void UpdatePistola()
@@ -75,6 +84,29 @@ public class PublicVariables : MonoBehaviour
 
         puerta4.GetComponent<AudioSource>().Play();
         puerta4.transform.Rotate(Vector3.up, 60);
+
+        AudioManager.instance.playSoundOnJugador(PathFollow.instance.sonidosDialogos[11]);
+        AudioManager.instance.playAfter(PathFollow.instance.sonidosDialogos[10], PathFollow.instance.sonidosDialogos[8]);
+        AudioManager.instance.playAfter(PathFollow.instance.sonidosDialogos[10], PathFollow.instance.sonidosDialogos[8], PathFollow.instance.sonidosDialogos[15]);
+        AudioManager.instance.playAfter(PathFollow.instance.sonidosDialogos[10], PathFollow.instance.sonidosDialogos[8], PathFollow.instance.sonidosDialogos[15], PathFollow.instance.sonidosDialogos[16]);
+        AudioManager.instance.playAfter(PathFollow.instance.sonidosDialogos[10], PathFollow.instance.sonidosDialogos[8], PathFollow.instance.sonidosDialogos[15], PathFollow.instance.sonidosDialogos[16], PathFollow.instance.sonidosDialogos[9]);
+    }
+
+    public void noEncuentraLlaves1()
+    {
+        if (PathFollow.instance.interactableObjects[3] != null)
+        {
+            AudioManager.instance.playSoundOnJugador(PathFollow.instance.sonidosDialogos[6]);
+            Invoke("noEncuentraLlaves2", PathFollow.instance.sonidosDialogos[6].length + 0.5f);
+        }
+    }
+
+    public void noEncuentraLlaves2()
+    {
+        if (PathFollow.instance.interactableObjects[3] != null)
+        {
+            AudioManager.instance.playSoundOnJugador(PathFollow.instance.sonidosDialogos[7]);
+        }
     }
 
     public void EndLevel()
