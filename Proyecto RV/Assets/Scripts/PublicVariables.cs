@@ -32,6 +32,17 @@ public class PublicVariables : MonoBehaviour
         instance = this;
     }
 
+    private void Start()
+    {
+        if (level == 3)
+        {
+            AudioManager.instance.playSoundOnJugador(PathFollow.instance.sonidosAux[0]);
+            AudioManager.instance.playAfter(PathFollow.instance.sonidosAux[0], PathFollow.instance.sonidosAux[1]);
+            float time = PathFollow.instance.sonidosAux[0].length + PathFollow.instance.sonidosAux[1].length;
+            Invoke("EndLevel", time + 1.0f);
+        }
+    }
+
     public void UpdateCarnet()
     {
         Destroy(carnet);
@@ -130,6 +141,17 @@ public class PublicVariables : MonoBehaviour
         {
             AudioManager.instance.playSoundOnJugador(PathFollow.instance.sonidosDialogos[7]);
         }
+    }
+
+    public void entrarLab()
+    {
+        if (PathFollow.instance.interactableObjects[0] == null)
+        {
+            AudioManager.instance.stopSound(AudioManager.instance.player);
+            AudioManager.instance.stopSound(AudioManager.instance.jugador);
+            EndLevel();
+        }
+            
     }
 
     public void EndLevel()

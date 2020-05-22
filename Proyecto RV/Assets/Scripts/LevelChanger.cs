@@ -42,10 +42,14 @@ public void WhiteFadeOut()
     {
         levelToLoad = levelIndex;
 
-        if (fadeC == 0)
-            BlackFadeOut();
-        else
-            WhiteFadeOut();
+        if (levelIndex < 4)
+        {
+            if (fadeC == 0)
+                BlackFadeOut();
+            else
+                WhiteFadeOut();
+        }
+        
     }
 
     public void OnFadeComplete()

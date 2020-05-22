@@ -13,6 +13,7 @@ public class AudioManager : MonoBehaviour
     public bool periodicoDialogo;
     public bool documentoDialogo;
     public bool ciudadDialogo;
+    public bool padDialogo;
 
     private AudioClip secondClipJugador;
     private AudioClip thirdClipJugador;
@@ -163,6 +164,15 @@ public class AudioManager : MonoBehaviour
             AudioManager.instance.playSoundOnJugador(ac);
             AudioManager.instance.playAfter(ac, PathFollow.instance.sonidosDialogos[5]);
             PublicVariables.instance.ciudad.SetActive(false);
+        }
+    }
+
+    public void tieneQueEntrar(AudioClip ac)
+    {
+        if (!padDialogo && PathFollow.instance.interactableObjects[0] != null)
+        {
+            padDialogo = true;
+            AudioManager.instance.playSoundOnJugador(ac);
         }
     }
 }

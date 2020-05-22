@@ -15279,7 +15279,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 195708696}
-          m_MethodName: EndLevel
+          m_MethodName: entrarLab
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -15289,12 +15289,17 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
         - m_Target: {fileID: 1806066415}
-          m_MethodName: stopSound
+          m_MethodName: tieneQueEntrar
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 2030314634}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+            m_ObjectArgument: {fileID: 8300000, guid: 4fea72f5bc746c1469037173d06594fa,
+              type: 3}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -58303,6 +58308,7 @@ MonoBehaviour:
   periodicoDialogo: 0
   documentoDialogo: 0
   ciudadDialogo: 0
+  padDialogo: 0
 --- !u!4 &1806066416
 Transform:
   m_ObjectHideFlags: 0
