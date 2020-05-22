@@ -15,8 +15,9 @@ public class MarkerHandlerT3 : MonoBehaviour
             looking = false;
             ZoomIn.instance.zooming = true;
             PublicVariables.instance.EndLevel();
-            gameObject.SetActive(false);
+            //gameObject.SetActive(false);
         }
+
     }
 
     public void startLooking()
