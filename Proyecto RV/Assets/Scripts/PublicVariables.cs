@@ -156,7 +156,7 @@ public class PublicVariables : MonoBehaviour
 
     public void EndLevel()
     {
-        LevelChanger.instance.FadeToLevel(level + 1, 0);
+        LevelChanger.instance.FadeToLevel(level, 0);
     }
 
 }

@@ -599,10 +599,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 150682531255d9d4e91121c79cd850f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxOutlineWidth: 0.3
-  OutlineColor: {r: 0, g: 0, b: 0, a: 0}
-  isSphere: 1
   collider: {fileID: 33505739}
+  isSphere: 1
   marcadoresAlrededor: 0600000008000000
 --- !u!135 &33505739
 SphereCollider:
@@ -641,36 +639,6 @@ MonoBehaviour:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 7
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 33505738}
-          m_MethodName: ShowOutline
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 1
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 33505738}
-          m_MethodName: HideOutline
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -999,36 +967,6 @@ MonoBehaviour:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 5
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1940587691}
-          m_MethodName: ShowOutline
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 1
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1940587691}
-          m_MethodName: HideOutline
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
@@ -1758,7 +1696,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh19272
+  m_Name: pb_Mesh67326
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4258,6 +4196,169 @@ Transform:
   m_Father: {fileID: 521369230}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!43 &225094905
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: pb_Mesh-24710
+  serializedVersion: 10
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 96
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 42
+    localAABB:
+      m_Center: {x: -0.25, y: 1.16, z: 0}
+      m_Extent: {x: 0.25, y: 1.16, z: 0.25}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000001000200010003000200040005000600050007000600080009000a0009000b000a000c000d000e000d000f000e00010010000300100011000300050012000700120013000700090014000b00140015000b000d0016000f00160017000f0010001800110018001900110012001a0013001a001b00130014001c0015001c001d00150016001e0017001e001f001700200021002200230021002000240021002300220021002400250026002700270026002800280026002900290026002500
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 42
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 40
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 2016
+    _typelessdata: 000000000000000000000000f304353f00000000f304353ff40435bf00000000f404353f000080bf0000000000000000000000002cf9453f00000000f304353f00000000f304353ff40435bf00000000f404353f000080bf000000002cf9453f000080be000000000000803ef304353f00000000f304353ff40435bf00000000f404353f000080bff304b53e00000000000080be2cf9453f0000803ef304353f00000000f304353ff40435bf00000000f404353f000080bff304b53e2cf9453f000080be000000000000803ef40435bf00000000f204353ff30435bf00000000f40435bf000080bf000000b300000000000080be2cf9453f0000803ef40435bf00000000f204353ff30435bf00000000f40435bf000080bf000000b32cf9453f000000bf000000002ebdbbb2f40435bf00000000f204353ff30435bf00000000f40435bf000080bff304b53e00000000000000bf2cf9453f2ebdbbb2f40435bf00000000f204353ff30435bf00000000f40435bf000080bff304b53e2cf9453f000000bf000000002ebdbbb2f30435bf00000000f40435bff404353f00000000f30435bf000080bff304b5be00000000000000bf2cf9453f2ebdbbb2f30435bf00000000f40435bff404353f00000000f30435bf000080bff304b5be2cf9453f000080be00000000000080bef30435bf00000000f40435bff404353f00000000f30435bf000080bf000080b200000000000080be2cf9453f000080bef30435bf00000000f40435bff404353f00000000f30435bf000080bf000080b22cf9453f000080be00000000000080bef304353f00000000f30435bff404353f00000000f404353f000080bff304b5be00000000000080be2cf9453f000080bef304353f00000000f30435bff404353f00000000f404353f000080bff304b5be2cf9453f000000000000000000000000f304353f00000000f30435bff404353f00000000f404353f000080bf0000000000000000000000002cf9453f00000000f304353f00000000f30435bff404353f00000000f404353f000080bf000000002cf9453f000000002cf9c53f00000000f304353f00000000f304353ff40435bf00000000f404353f000080bf000000002cf9c53f000080be2cf9c53f0000803ef304353f00000000f304353ff40435bf00000000f404353f000080bff304b53e2cf9c53f000080be2cf9c53f0000803ef40435bf00000000f204353ff30435bf00000000f40435bf000080bf000000b32cf9c53f000000bf2cf9c53f2ebdbbb2f40435bf00000000f204353ff30435bf00000000f40435bf000080bff304b53e2cf9c53f000000bf2cf9c53f2ebdbbb2f30435bf00000000f40435bff404353f00000000f30435bf000080bff304b5be2cf9c53f000080be2cf9c53f000080bef30435bf00000000f40435bff404353f00000000f30435bf000080bf000080b22cf9c53f000080be2cf9c53f000080bef304353f00000000f30435bff404353f00000000f404353f000080bff304b5be2cf9c53f000000002cf9c53f00000000f304353f00000000f30435bff404353f00000000f404353f000080bf000000002cf9c53f00000000e17a144000000000f304353f00000000f304353ff40435bf00000000f404353f000080bf00000000e17a1440000080bee17a14400000803ef304353f00000000f304353ff40435bf00000000f404353f000080bff304b53ee17a1440000080bee17a14400000803ef40435bf00000000f204353ff30435bf00000000f40435bf000080bf000000b3e17a1440000000bfe17a14402ebdbbb2f40435bf00000000f204353ff30435bf00000000f40435bf000080bff304b53ee17a1440000000bfe17a14402ebdbbb2f30435bf00000000f40435bff404353f00000000f30435bf000080bff304b5bee17a1440000080bee17a1440000080bef30435bf00000000f40435bff404353f00000000f30435bf000080bf000080b2e17a1440000080bee17a1440000080bef304353f00000000f30435bff404353f00000000f404353f000080bff304b5bee17a144000000000e17a144000000000f304353f00000000f30435bff404353f00000000f404353f000080bf00000000e17a1440000080be000000000000803e00000000000080bf00000000000080bf0000000000000000000080bf0000803e0000803e000080be000000000000000000000000000080bf00000000000080bf0000000000000000000080bf0000803e0000000000000000000000000000000000000000000080bf00000000000080bf0000000000000000000080bf0000000000000000000000bf000000002ebdbbb200000000000080bf00000000000080bf0000000000000000000080bf0000003f2ebdbbb2000080be00000000000080be00000000000080bf00000000000080bf0000000000000000000080bf0000803e000080be00000000e17a144000000000000000000000803f000000000000803f0000000000000000000080bf0000000000000000000080bee17a144000000000000000000000803f000000000000803f0000000000000000000080bf000080be00000000000080bee17a14400000803e000000000000803f000000000000803f0000000000000000000080bf000080be0000803e000000bfe17a14402ebdbbb2000000000000803f000000000000803f0000000000000000000080bf000000bf2ebdbbb2000080bee17a1440000080be000000000000803f000000000000803f0000000000000000000080bf000080be000080be
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: -0.25, y: 1.16, z: 0}
+    m_Extent: {x: 0.25, y: 1.16, z: 0.25}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    offset: 0
+    size: 0
+    path: 
 --- !u!1 &228396946
 GameObject:
   m_ObjectHideFlags: 0
@@ -4321,36 +4422,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 228396949}
-          m_MethodName: ShowOutline
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 1
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 228396949}
-          m_MethodName: HideOutline
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!114 &228396949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4363,10 +4434,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 150682531255d9d4e91121c79cd850f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxOutlineWidth: 0.3
-  OutlineColor: {r: 0, g: 0, b: 0, a: 0}
-  isSphere: 1
   collider: {fileID: 228396950}
+  isSphere: 1
   marcadoresAlrededor: 090000000b000000
 --- !u!135 &228396950
 SphereCollider:
@@ -4863,7 +4932,7 @@ PrefabInstance:
     - target: {fileID: 8467531489759482490, guid: 340a4b1fad47a6d45924ca2972a25de9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 26.964
+      value: 27.051
       objectReference: {fileID: 0}
     - target: {fileID: 8467531489759482490, guid: 340a4b1fad47a6d45924ca2972a25de9,
         type: 3}
@@ -4977,36 +5046,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 259129899}
-          m_MethodName: ShowOutline
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 1
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 259129899}
-          m_MethodName: HideOutline
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!114 &259129899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5019,10 +5058,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 150682531255d9d4e91121c79cd850f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxOutlineWidth: 0.3
-  OutlineColor: {r: 0, g: 0, b: 0, a: 0}
-  isSphere: 1
   collider: {fileID: 259129900}
+  isSphere: 1
   marcadoresAlrededor: 0200000004000000
 --- !u!135 &259129900
 SphereCollider:
@@ -5574,36 +5611,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 290336721}
-          m_MethodName: ShowOutline
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 1
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 290336721}
-          m_MethodName: HideOutline
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!114 &290336721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5616,10 +5623,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 150682531255d9d4e91121c79cd850f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxOutlineWidth: 0.3
-  OutlineColor: {r: 0, g: 0, b: 0, a: 0}
-  isSphere: 1
   collider: {fileID: 290336716}
+  isSphere: 1
   marcadoresAlrededor: 01000000
 --- !u!1001 &291992342
 PrefabInstance:
@@ -7800,7 +7805,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-27716
+  m_Name: pb_Mesh68930
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -8219,7 +8224,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-71356
+  m_Name: pb_Mesh69028
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10732,7 +10737,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 1647106518}
+      objectReference: {fileID: 225094905}
     - target: {fileID: 4527282231250040211, guid: 54f1cedd8e7f0884cb4613452e68e6c7,
         type: 3}
       propertyPath: m_Mesh
@@ -10742,7 +10747,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 1647106518}
+      objectReference: {fileID: 225094905}
     - target: {fileID: 5552987212695874670, guid: 54f1cedd8e7f0884cb4613452e68e6c7,
         type: 3}
       propertyPath: m_Mesh
@@ -10752,7 +10757,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 1647106518}
+      objectReference: {fileID: 225094905}
     m_RemovedComponents:
     - {fileID: 280522195181214333, guid: 54f1cedd8e7f0884cb4613452e68e6c7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 54f1cedd8e7f0884cb4613452e68e6c7, type: 3}
@@ -10848,8 +10853,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b928c2659d5950f4eb32816a61a226b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxOutlineWidth: 0.00001
-  OutlineColor: {r: 0, g: 0, b: 0, a: 0}
   collider: {fileID: 583532327}
 --- !u!65 &583532327
 BoxCollider:
@@ -13638,8 +13641,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b928c2659d5950f4eb32816a61a226b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxOutlineWidth: 0.05
-  OutlineColor: {r: 0, g: 0, b: 0, a: 0}
   collider: {fileID: 706222642}
 --- !u!65 &706222642
 BoxCollider:
@@ -13686,17 +13687,6 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 706222641}
-          m_MethodName: ShowOutline
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
         - m_Target: {fileID: 706222640}
           m_MethodName: playSound
           m_Mode: 2
@@ -13704,21 +13694,6 @@ MonoBehaviour:
             m_ObjectArgument: {fileID: 8300000, guid: e0b972b9ce6d95d4ab86cccbb21dd4fd,
               type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 1
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 706222641}
-          m_MethodName: HideOutline
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -14814,7 +14789,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-34670
+  m_Name: pb_Mesh67504
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -16612,7 +16587,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-58580
+  m_Name: pb_Mesh67966
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -16832,36 +16807,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 863045221}
-          m_MethodName: ShowOutline
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 1
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 863045221}
-          m_MethodName: HideOutline
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!114 &863045221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16874,10 +16819,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 150682531255d9d4e91121c79cd850f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxOutlineWidth: 0.3
-  OutlineColor: {r: 0, g: 0, b: 0, a: 0}
-  isSphere: 1
   collider: {fileID: 863045222}
+  isSphere: 1
   marcadoresAlrededor: 0300000005000000
 --- !u!135 &863045222
 SphereCollider:
@@ -17390,36 +17333,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 880167824}
-          m_MethodName: ShowOutline
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 1
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 880167824}
-          m_MethodName: HideOutline
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!65 &880167822
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17445,10 +17358,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 150682531255d9d4e91121c79cd850f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxOutlineWidth: 0.3
-  OutlineColor: {r: 0, g: 0, b: 0, a: 0}
-  isSphere: 0
   collider: {fileID: 880167822}
+  isSphere: 0
   marcadoresAlrededor: 000000000100000003000000
 --- !u!114 &880167827
 MonoBehaviour:
@@ -18001,6 +17912,7 @@ MonoBehaviour:
   periodicoDialogo: 0
   documentoDialogo: 0
   ciudadDialogo: 0
+  padDialogo: 0
 --- !u!4 &889922137
 Transform:
   m_ObjectHideFlags: 0
@@ -21114,7 +21026,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-53074
+  m_Name: pb_Mesh68552
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -21702,36 +21614,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1101299998}
-          m_MethodName: ShowOutline
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 1
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1101299998}
-          m_MethodName: HideOutline
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!114 &1101299998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21744,10 +21626,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 150682531255d9d4e91121c79cd850f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxOutlineWidth: 0.3
-  OutlineColor: {r: 0, g: 0, b: 0, a: 0}
-  isSphere: 0
   collider: {fileID: 1101299999}
+  isSphere: 0
   marcadoresAlrededor: 040000000500000007000000
 --- !u!65 &1101299999
 BoxCollider:
@@ -22355,36 +22235,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1124945611}
-          m_MethodName: ShowOutline
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 1
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1124945611}
-          m_MethodName: HideOutline
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!65 &1124945609
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22416,8 +22266,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b928c2659d5950f4eb32816a61a226b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxOutlineWidth: 0.3
-  OutlineColor: {r: 0, g: 0, b: 0, a: 0}
   collider: {fileID: 1124945609}
 --- !u!4 &1128517929 stripped
 Transform:
@@ -22937,7 +22785,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 1.5
   m_Range: 50
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -23912,7 +23760,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-58322
+  m_Name: pb_Mesh67734
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -24861,7 +24709,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 3
+  m_Intensity: 4
   m_Range: 10.48
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -25128,10 +24976,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 150682531255d9d4e91121c79cd850f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxOutlineWidth: 0.02
-  OutlineColor: {r: 0, g: 0, b: 0, a: 0}
-  isSphere: 0
   collider: {fileID: 1335303576}
+  isSphere: 0
   marcadoresAlrededor: 0000000001000000
 --- !u!4 &1339703361 stripped
 Transform:
@@ -25889,7 +25735,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh20598
+  m_Name: pb_Mesh68774
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -26935,8 +26781,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b928c2659d5950f4eb32816a61a226b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxOutlineWidth: 0.00001
-  OutlineColor: {r: 0, g: 0, b: 0, a: 0}
   collider: {fileID: 1425342486}
 --- !u!65 &1425342486
 BoxCollider:
@@ -27863,7 +27707,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-35102
+  m_Name: pb_Mesh68494
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -29154,36 +28998,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1335303578}
-          m_MethodName: ShowOutline
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 1
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1335303578}
-          m_MethodName: HideOutline
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1001 &1537421009
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29596,8 +29410,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b928c2659d5950f4eb32816a61a226b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxOutlineWidth: 0.1
-  OutlineColor: {r: 0, g: 0, b: 0, a: 0}
   collider: {fileID: 1556386832}
 --- !u!114 &1556386830
 MonoBehaviour:
@@ -29643,17 +29455,6 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1556386829}
-          m_MethodName: ShowOutline
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
         - m_Target: {fileID: 1556386837}
           m_MethodName: playSound
           m_Mode: 2
@@ -29673,21 +29474,6 @@ MonoBehaviour:
             m_ObjectArgument: {fileID: 8300000, guid: 434895e8e3459e84ba0b1a50f7dd990b,
               type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 1
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1556386829}
-          m_MethodName: HideOutline
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -32212,169 +31998,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 811058b55bea6924c858a72a6717daec, type: 3}
---- !u!43 &1647106518
-Mesh:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2498
-  serializedVersion: 10
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 96
-    topology: 0
-    baseVertex: 0
-    firstVertex: 0
-    vertexCount: 42
-    localAABB:
-      m_Center: {x: -0.25, y: 1.16, z: 0}
-      m_Extent: {x: 0.25, y: 1.16, z: 0.25}
-  m_Shapes:
-    vertices: []
-    shapes: []
-    channels: []
-    fullWeights: []
-  m_BindPose: []
-  m_BoneNameHashes: 
-  m_RootBoneNameHash: 0
-  m_BonesAABB: []
-  m_VariableBoneCountWeights:
-    m_Data: 
-  m_MeshCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 1
-  m_KeepIndices: 1
-  m_IndexFormat: 0
-  m_IndexBuffer: 000001000200010003000200040005000600050007000600080009000a0009000b000a000c000d000e000d000f000e00010010000300100011000300050012000700120013000700090014000b00140015000b000d0016000f00160017000f0010001800110018001900110012001a0013001a001b00130014001c0015001c001d00150016001e0017001e001f001700200021002200230021002000240021002300220021002400250026002700270026002800280026002900290026002500
-  m_VertexData:
-    serializedVersion: 3
-    m_VertexCount: 42
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 12
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 24
-      format: 0
-      dimension: 4
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 40
-      format: 0
-      dimension: 2
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 2016
-    _typelessdata: 000000000000000000000000f304353f00000000f304353ff40435bf00000000f404353f000080bf0000000000000000000000002cf9453f00000000f304353f00000000f304353ff40435bf00000000f404353f000080bf000000002cf9453f000080be000000000000803ef304353f00000000f304353ff40435bf00000000f404353f000080bff304b53e00000000000080be2cf9453f0000803ef304353f00000000f304353ff40435bf00000000f404353f000080bff304b53e2cf9453f000080be000000000000803ef40435bf00000000f204353ff30435bf00000000f40435bf000080bf000000b300000000000080be2cf9453f0000803ef40435bf00000000f204353ff30435bf00000000f40435bf000080bf000000b32cf9453f000000bf000000002ebdbbb2f40435bf00000000f204353ff30435bf00000000f40435bf000080bff304b53e00000000000000bf2cf9453f2ebdbbb2f40435bf00000000f204353ff30435bf00000000f40435bf000080bff304b53e2cf9453f000000bf000000002ebdbbb2f30435bf00000000f40435bff404353f00000000f30435bf000080bff304b5be00000000000000bf2cf9453f2ebdbbb2f30435bf00000000f40435bff404353f00000000f30435bf000080bff304b5be2cf9453f000080be00000000000080bef30435bf00000000f40435bff404353f00000000f30435bf000080bf000080b200000000000080be2cf9453f000080bef30435bf00000000f40435bff404353f00000000f30435bf000080bf000080b22cf9453f000080be00000000000080bef304353f00000000f30435bff404353f00000000f404353f000080bff304b5be00000000000080be2cf9453f000080bef304353f00000000f30435bff404353f00000000f404353f000080bff304b5be2cf9453f000000000000000000000000f304353f00000000f30435bff404353f00000000f404353f000080bf0000000000000000000000002cf9453f00000000f304353f00000000f30435bff404353f00000000f404353f000080bf000000002cf9453f000000002cf9c53f00000000f304353f00000000f304353ff40435bf00000000f404353f000080bf000000002cf9c53f000080be2cf9c53f0000803ef304353f00000000f304353ff40435bf00000000f404353f000080bff304b53e2cf9c53f000080be2cf9c53f0000803ef40435bf00000000f204353ff30435bf00000000f40435bf000080bf000000b32cf9c53f000000bf2cf9c53f2ebdbbb2f40435bf00000000f204353ff30435bf00000000f40435bf000080bff304b53e2cf9c53f000000bf2cf9c53f2ebdbbb2f30435bf00000000f40435bff404353f00000000f30435bf000080bff304b5be2cf9c53f000080be2cf9c53f000080bef30435bf00000000f40435bff404353f00000000f30435bf000080bf000080b22cf9c53f000080be2cf9c53f000080bef304353f00000000f30435bff404353f00000000f404353f000080bff304b5be2cf9c53f000000002cf9c53f00000000f304353f00000000f30435bff404353f00000000f404353f000080bf000000002cf9c53f00000000e17a144000000000f304353f00000000f304353ff40435bf00000000f404353f000080bf00000000e17a1440000080bee17a14400000803ef304353f00000000f304353ff40435bf00000000f404353f000080bff304b53ee17a1440000080bee17a14400000803ef40435bf00000000f204353ff30435bf00000000f40435bf000080bf000000b3e17a1440000000bfe17a14402ebdbbb2f40435bf00000000f204353ff30435bf00000000f40435bf000080bff304b53ee17a1440000000bfe17a14402ebdbbb2f30435bf00000000f40435bff404353f00000000f30435bf000080bff304b5bee17a1440000080bee17a1440000080bef30435bf00000000f40435bff404353f00000000f30435bf000080bf000080b2e17a1440000080bee17a1440000080bef304353f00000000f30435bff404353f00000000f404353f000080bff304b5bee17a144000000000e17a144000000000f304353f00000000f30435bff404353f00000000f404353f000080bf00000000e17a1440000080be000000000000803e00000000000080bf00000000000080bf0000000000000000000080bf0000803e0000803e000080be000000000000000000000000000080bf00000000000080bf0000000000000000000080bf0000803e0000000000000000000000000000000000000000000080bf00000000000080bf0000000000000000000080bf0000000000000000000000bf000000002ebdbbb200000000000080bf00000000000080bf0000000000000000000080bf0000003f2ebdbbb2000080be00000000000080be00000000000080bf00000000000080bf0000000000000000000080bf0000803e000080be00000000e17a144000000000000000000000803f000000000000803f0000000000000000000080bf0000000000000000000080bee17a144000000000000000000000803f000000000000803f0000000000000000000080bf000080be00000000000080bee17a14400000803e000000000000803f000000000000803f0000000000000000000080bf000080be0000803e000000bfe17a14402ebdbbb2000000000000803f000000000000803f0000000000000000000080bf000000bf2ebdbbb2000080bee17a1440000080be000000000000803f000000000000803f0000000000000000000080bf000080be000080be
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UVInfo: 0
-  m_LocalAABB:
-    m_Center: {x: -0.25, y: 1.16, z: 0}
-    m_Extent: {x: 0.25, y: 1.16, z: 0.25}
-  m_MeshUsageFlags: 0
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 1
-  m_MeshOptimizationFlags: 1
-  m_StreamData:
-    offset: 0
-    size: 0
-    path: 
 --- !u!4 &1647249009 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4395858384974828, guid: 435d6c04701b147c999265d1b3cd6f66,
@@ -32468,7 +32091,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh20224
+  m_Name: pb_Mesh68324
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -32932,7 +32555,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-70326
+  m_Name: pb_Mesh68402
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -34946,36 +34569,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1760148526}
-          m_MethodName: ShowOutline
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 1
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1760148526}
-          m_MethodName: HideOutline
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!82 &1760148525
 AudioSource:
   m_ObjectHideFlags: 0
@@ -35085,10 +34678,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 150682531255d9d4e91121c79cd850f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxOutlineWidth: 0.3
-  OutlineColor: {r: 0, g: 0, b: 0, a: 0}
-  isSphere: 0
   collider: {fileID: 1760148522}
+  isSphere: 0
   marcadoresAlrededor: 0a000000
 --- !u!1001 &1766206872
 PrefabInstance:
@@ -45528,8 +45119,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b928c2659d5950f4eb32816a61a226b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxOutlineWidth: 0.00001
-  OutlineColor: {r: 0, g: 0, b: 0, a: 0}
   collider: {fileID: 1828687522}
 --- !u!65 &1828687522
 BoxCollider:
@@ -45588,17 +45177,6 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1828687521}
-          m_MethodName: ShowOutline
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
         - m_Target: {fileID: 1828687527}
           m_MethodName: playSound
           m_Mode: 2
@@ -45618,21 +45196,6 @@ MonoBehaviour:
             m_ObjectArgument: {fileID: 8300000, guid: 87d4a72f2fe41c5489ed8f33e8b64170,
               type: 3}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 1
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1828687521}
-          m_MethodName: HideOutline
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -47309,10 +46872,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 150682531255d9d4e91121c79cd850f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxOutlineWidth: 0.02
-  OutlineColor: {r: 0, g: 0, b: 0, a: 0}
-  isSphere: 0
   collider: {fileID: 1940587692}
+  isSphere: 0
   marcadoresAlrededor: 04000000
 --- !u!65 &1940587692
 BoxCollider:
@@ -49959,36 +49520,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1986579125}
-          m_MethodName: ShowOutline
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 1
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1986579125}
-          m_MethodName: HideOutline
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!65 &1986579124
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -50014,10 +49545,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 150682531255d9d4e91121c79cd850f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxOutlineWidth: 3
-  OutlineColor: {r: 0, g: 0, b: 0, a: 0}
-  isSphere: 0
   collider: {fileID: 1986579124}
+  isSphere: 0
   marcadoresAlrededor: 07000000
 --- !u!1001 &1989820988
 PrefabInstance:
@@ -52562,10 +52091,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 150682531255d9d4e91121c79cd850f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxOutlineWidth: 0.5
-  OutlineColor: {r: 0, g: 0, b: 0, a: 0}
-  isSphere: 0
   collider: {fileID: 2065073021}
+  isSphere: 0
   marcadoresAlrededor: 070000000a000000
 --- !u!114 &2065073020
 MonoBehaviour:
@@ -52591,36 +52118,6 @@ MonoBehaviour:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 9
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 0
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 2065073019}
-          m_MethodName: ShowOutline
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 1
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 2065073019}
-          m_MethodName: HideOutline
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
